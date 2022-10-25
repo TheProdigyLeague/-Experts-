@@ -2,18 +2,13 @@ name: Contributor License Agreement Policy
 description: CLA policy file
 
 resource: repository
-where:
-- |
-  !repository.name.equals("CHERIoT", StringComparison.InvariantCultureIgnoreCase)
 
 configuration: 
    cla:
-      content: https://raw.githubusercontent.com/microsoft/.github/main/CLA/microsoft.yml
+      content: https://raw.githubusercontent.com/OmniSharp/.github/main/policies/dotnetfoundation.yml
       minimalChangeRequired: 
          files: 2
          codeLines: 16
-      bypassOrgs:
-         - bloomberg
       bypassUsers:
          - dependabot[bot]
          - greenkeeper[bot]
@@ -110,10 +105,3 @@ configuration:
          - OhMyGuus-Bot
          - podman-desktop-bot
          - liurunliang-bot
-      prohibitedCompanies:
-         - msft
-      autoSignMsftEmployee: true
-      signRepos:
-      - repoName: cla-approvers-intel
-        fileName: approvedUsers.csv
-        companyName: intel
