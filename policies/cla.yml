@@ -1,14 +1,13 @@
 name: Contributor License Agreement Policy
-description: CLA policy file
+description: .NET Foundation CLA policy file
 
 resource: repository
-
 configuration: 
    cla:
-      content: https://raw.githubusercontent.com/OmniSharp/.github/main/policies/dotnetfoundation.yml
+      content: https://raw.githubusercontent.com/dotnet-foundation/.github/main/CLA/dotnetfoundation.yml
       minimalChangeRequired: 
-         files: 2
-         codeLines: 16
+         files: 1
+         codeLines: 8
       bypassUsers:
          - dependabot[bot]
          - greenkeeper[bot]
@@ -105,3 +104,4 @@ configuration:
          - OhMyGuus-Bot
          - podman-desktop-bot
          - liurunliang-bot
+      autoSignMsftEmployee: true
